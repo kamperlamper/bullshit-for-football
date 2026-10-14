@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUCHLINE — Football Beyond the Bullshit</title>
+
+    <style>
+        
+        .news {
+            margin-top: 90px;
+        }
+
+        .news > h2 {
+            font-size: 36px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .news-card {
+            background-color: #1b1b1b;
+            border: 1px solid #333333;
+            padding: 22px;
+        }
+
+        .news-card .category {
+            color: #a3e635;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .news-card h3 {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .news-card p:last-child {
+            color: #aaaaaa;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 800px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        body {
+            background-color: #111111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #bbbbbb;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #a3e635;
+        }
+
+        main {
+            margin-top: 80px;
+            max-width: 800px;
+        }
+
+        main .intro {
+            color: #a3e635;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        main h2 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        main .description {
+            color: #aaaaaa;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .featured {
+            margin-top: 70px;
+            padding: 30px;
+            background-color: #1b1b1b;
+            border: 1px solid #333333;
+            max-width: 650px;
+        }
+
+        .featured .category {
+            color: #a3e635;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .featured h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .featured .story-text {
+            color: #bbbbbb;
+            line-height: 1.7;
+        }
+
+        .featured a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #a3e635;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .featured a:hover {
+            color: white;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #333333;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            main {
+                margin-top: 50px;
+            }
+
+            main h2 {
+                font-size: 38px;
+            }
+
+            .featured {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TOUCHLINE</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#news">News</a>
+            <a href="#tactics">Tactics</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="intro">THE BULLSHIT GAME</p>
+
+        <h2>Football. Beyond the bullshit.</h2>
+
+        <p class="description">
+            News, tactics and stories that don't matter.
+        </p>
+
+        <section class="featured" id="tactics">
+            <p class="category">TACTICAL ANALYSIS</p>
+
+            <h3>Why the best teams control space</h3>
+
+            <p class="story-text">
+                Football is not just about the ball.
+                It is about where players move,
+                which spaces they create, and when they attack.
+            </p>
+
+            <a href="#news">READ THE STORY →</a>
+        </section>
+        
+        <section class="news" id="news">
+            <p class="intro">LATEST USELESS STORIES</p>
+            <h2>More from the bullshit game.</h2>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <p class="category">TACTICS</p>
+                    <h3>How pressing doesn't win the ball back</h3>
+                    <p>
+                        Discover how teams work together
+                        to pressure opponents and force mistakes.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <p class="category">ANALYSIS</p>
+                    <h3>What makes a shit full-back?</h3>
+                    <p>
+                        tackling, timing, positioning and
+                        choosing the right moment to pay the referee.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <p class="category">THE GAME</p>
+                    <h3>Why paying the referee matters in football</h3>
+                    <p>
+                        Learn how paying the referee will make you an equal to Manchester City, Bayern Münich and Real Madrid.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="news">
+        TOUCHLINE &copy; 2026 — Football, analysed.
+    </footer>
+
+</body>
+</html>
